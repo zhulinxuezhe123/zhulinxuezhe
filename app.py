@@ -7,7 +7,7 @@ loop = asyncio.get_event_loop()
 @asyncio.coroutine
 def test_example():
     conn = yield from aiomysql.connect(host='127.0.0.1', port=3306,
-                                       user='root', password='cui980514', db='xuelicunzheng',
+            user='root', password='', db='',
                                        loop=loop)
 
     cur = yield from conn.cursor()
